@@ -1,0 +1,82 @@
+body{
+    background-color: #219ebc;
+    background-size: cover;
+    background-position: center; 
+    font-family: "Poetsen One", sans-serif;
+    color: #023047;
+}
+#out-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #caf0f8;
+    margin: 5em;
+    padding: 1em;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+#input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#data-container {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.row {
+    background-color:#caf0f8;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.5em 0.5em;
+}
+.row h2 {
+    flex: 1;
+    margin:0;
+}
+.row h3 {
+    flex: 1;
+    margin: 0;
+}
+#heading{
+    font-weight: 400; 
+}
+.cloud-symbol{
+    font-size: 2em;
+    margin-left:0.25em;
+    vertical-align: middle;
+    color:#219ebc;
+}
+#input{
+    max-width:80em;
+    padding: 1em 2em;
+    margin: 1em;
+    border-radius:1em ;
+    font-size: 15px;
+    border:none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+#btn{
+    max-width: 40em;
+    padding: 1em 2em;
+    margin: 1em;
+    border-radius: 1em;
+    font-family: inherit;
+    font-size: 15px;
+    background-color:  #ffcd00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border:none;
+    color: #219ebc;
+    cursor: pointer;
+}
+#nameRegion, #temp, #localTime, #condition{
+    color: #023047;
+}

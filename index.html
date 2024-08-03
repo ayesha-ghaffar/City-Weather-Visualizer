@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript practice</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=Poetsen+One&display=swap');
+    </style>
+
+</head>
+<body>
+    <div id="out-container">
+        <h1 id="heading">Weather Updates <span class="cloud-symbol">&#9729;</span></h1>
+        <div id="input-container">
+            <input id="input" type="text" placeholder="Enter city name">
+            <button id="btn">search</button>
+        </div>
+        <div id="data-container">
+            <div class="row">
+                <h2>City Name, Region - Country :</h2>
+                <h3 id="nameRegion"></h3>
+            </div>
+            <div class="row">
+                <h2>LocalTime :</h2>
+                <h3 id="localTime"></h3>
+            </div>
+            <div class="row">
+                <h2>Temperature in Celsius :</h2>
+                <h3 id="temp"></h3>
+            </div>
+            <div class="row">
+                <h2>Condition :</h2>
+                <h3 id="condition"></h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
