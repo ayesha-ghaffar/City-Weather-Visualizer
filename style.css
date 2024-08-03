@@ -1,26 +1,32 @@
-body{
+
+body {
     background-color: #219ebc;
     background-size: cover;
     background-position: center; 
     font-family: "Poetsen One", sans-serif;
     color: #023047;
+    margin: 0;
+    padding: 0;
 }
-#out-container{
-    display:flex;
+
+#out-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #caf0f8;
-    margin: 5em;
+    margin: 2em auto;
     padding: 1em;
     border-radius: 2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 800px;
     box-sizing: border-box;
-
 }
+
 #input-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
 }
@@ -31,87 +37,96 @@ body{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
 }
+
 .row {
-    background-color:#caf0f8;
+    background-color: #caf0f8;
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-    padding: 0.5em 0.5em;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents content from overflowing */
 }
+
 .row h2 {
-    flex: 1;
-    margin:0;
-}
-.row h3 {
-    flex: 1;
     margin: 0;
+    font-size: 1em;
 }
-#heading{
+
+.row h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+#heading {
     font-weight: 400; 
+    text-align: center;
+    font-size: 1.5em;
 }
-.cloud-symbol{
+
+.cloud-symbol {
     font-size: 2em;
-    margin-left:0.25em;
+    margin-left: 0.25em;
     vertical-align: middle;
-    color:#219ebc;
+    color: #219ebc;
 }
-#input{
-    max-width:80em;
-    padding: 1em 2em;
-    margin: 1em;
-    border-radius:1em ;
-    font-size: 15px;
-    border:none;
+
+#input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75em;
+    margin: 0.5em 0;
+    border-radius: 1em;
+    font-size: 14px;
+    border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
 }
-#btn{
-    max-width: 40em;
-    padding: 1em 2em;
-    margin: 1em;
+
+#btn {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75em;
+    margin: 0.5em 0;
     border-radius: 1em;
     font-family: inherit;
-    font-size: 15px;
-    background-color:  #ffcd00;
+    font-size: 14px;
+    background-color: #ffcd00;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    border:none;
+    border: none;
     color: #219ebc;
     cursor: pointer;
 }
-#nameRegion, #temp, #localTime, #condition{
-    color: #023047;
+
+#nameRegion, #temp, #localTime, #condition {
+    color: #229ebc;
+    font-size: 1em;
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
     #out-container {
         margin: 1em;
-        padding: 0.5em;
+        padding: 1em;
         border-radius: 1em;
     }
     
-    #data-container {
-        width: 100%;
-    }
-    
-    .row {
+    #input-container {
         flex-direction: column;
-        align-items: flex-start;
-        width: calc(100% - 2em); /* Ensure padding/margin is accounted for */
-        padding: 0.5em 1em;
     }
     
     #input, #btn {
-        width: calc(100% - 2em);
+        width: calc(100% - 2em); /* Adjust for padding/margin */
         max-width: none;
     }
 }
 
 @media (max-width: 480px) {
     #heading {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .cloud-symbol {
@@ -119,6 +134,10 @@ body{
     }
     
     #input, #btn {
-        font-size: 14px;
+        font-size: 13px;
+    }
+    
+    .row h2, .row h3 {
+        font-size: 0.9em;
     }
 }
