@@ -16,7 +16,7 @@ btn.addEventListener("click", async ()=>{
     const cityData= await findweather(cityName);
     nameRegion.innerText=`${cityData.location.name}, ${cityData.location.region} - ${cityData.location.country}`
     localTime.innerText=`${cityData.location.localtime}`
-    temp.innerText=`${cityData.current.temp_c}`
+    temp.innerText=`${cityData.current.temp_c} °C`
     condition.innerText=`${cityData.current.condition.text}`
 })
 
