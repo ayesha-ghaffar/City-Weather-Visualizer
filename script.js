@@ -7,7 +7,7 @@ const temp=document.getElementById("temp");
 const condition=document.getElementById("condition");
 
 async function findweather(city){
-const promise= await fetch(`http://api.weatherapi.com/v1/current.json?key=c3724c5ac0f14cd29e7223304240208&q=${city}&aqi=no`);
+const promise= await fetch(`https://api.weatherapi.com/v1/current.json?key=c3724c5ac0f14cd29e7223304240208&q=${city}&aqi=no`);
  return  await promise.json();
 }
 
